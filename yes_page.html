@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tớ cũng thích cậu nhiều lắm!</title>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">Tớ cũng thích cậu nhiều lắm!</h1>
+        <div class="gif_container">
+            <img src="gei_ni_yi_ge_hua.jpg">
+        </div>
+    </div>
+    <audio id="yes-audio" autoplay loop>
+        <source src="romantic_sound.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<!-- ...existing code... -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerText = '💖';
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '-40px';
+            heart.style.fontSize = (Math.random() * 30 + 20) + 'px';
+            heart.style.opacity = Math.random() * 0.5 + 0.5;
+            heart.style.pointerEvents = 'none';
+            heart.style.transition = 'transform 3s linear, opacity 3s linear';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.style.transform = `translateY(${window.innerHeight + 60}px) rotate(${Math.random() * 60 - 30}deg)`;
+                heart.style.opacity = 0;
+            }, 10);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 3100);
+        }
+
+        setInterval(createHeart, 300);
+
+        window.addEventListener('DOMContentLoaded', function() {
+        const audio = document.getElementById('yes-audio');
+        if (audio) {
+            audio.play().catch(() => {
+                // Nếu bị chặn, có thể thêm nút để user tự bật nhạc
+                // Hoặc bỏ qua nếu không cần xử lý thêm
+            });
+        }
+        });
+    </script>
+</html>
