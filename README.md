@@ -13,8 +13,8 @@ Dự án này tạo ra một trang web với hai nút "Yes" và "No". Khi nhấn
 ## 🎨 Tính năng
 
 - **Nút tương tác:** Nút "No" thay đổi nhiều câu từ chối hài hước, nút "Yes" phóng to dần.
-- **Hiệu ứng động:** Dấu hỏi bay lên khi nhấn "No", trái tim rơi khi nhấn "Yes".
-- **Âm nhạc:** Nhạc nền dễ thương cho cả hai trang.
+- **Hiệu ứng động:** Dấu hỏi bay lên khi nhấn "No".
+- **Âm nhạc:** Nhạc nền dễ thương cho trang "Yes".
 - **Responsive:** Giao diện đẹp trên cả máy tính và điện thoại.
 
 ---
