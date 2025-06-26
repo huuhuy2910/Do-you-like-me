@@ -61,4 +61,4 @@ MIT License – Xem chi tiết trong file [LICENSE](LICENSE).
 
 ---
 
-Chúc bạn có trải nghiệm vui vẻ và bất ngờ dễ
+Thank you <3333
